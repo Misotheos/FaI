@@ -1,0 +1,21 @@
+export const univenFields = {
+  reference: '#imovel_inf_referencia',
+  type: '#imovel_inf_tipo',
+  salePrice: '#imovel_inf_valvenda',
+  condominiumFee: '#imovel_cap_valcondominio',
+  iptu: '#imovel_cap_valiptu',
+  advertisementDescription: '#imovel_int_anunciointernet',
+  internalDescription: '#imovel_inf_descricao',
+  cep: '#imovel_inf_cep',
+  street: '#imovel_inf_endereco',
+  number: '#imovel_inf_numero',
+  neighborhood: '#imovel_inf_bairro',
+  city: '#imovel_inf_cidade',
+  state: '#imovel_inf_uf',
+  bedrooms: '#imovel_det_dormitorios',
+  suites: '#imovel_det_suite',
+  bathrooms: '#imovel_det_banheiros',
+  parkingSpaces: '#imovel_det_garagens',
+  usableArea: '#imovel_det_areautil',
+  totalArea: '#imovel_det_areatotal'
+} as const;

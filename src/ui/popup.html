@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistente de Captação Fátima</title>
+  </head>
+  <body>
+    <h1>Bandeja de Captura</h1>
+    <label for="capture-filter">Filtrar status</label>
+    <select id="capture-filter">
+      <option value="new">Novos</option>
+      <option value="selected">Selecionados</option>
+      <option value="kept">Mantidos</option>
+      <option value="discarded">Descartados</option>
+      <option value="all">Todos</option>
+    </select>
+    <div>
+      <button id="capture-select-all" type="button">Selecionar todos</button>
+      <button id="capture-clear-selection" type="button">Desmarcar todos</button>
+      <button id="capture-keep-selected" type="button">Manter selecionados</button>
+      <button id="capture-discard-selected" type="button">Descartar selecionados</button>
+      <button id="capture-delete-selected" type="button">Excluir selecionados</button>
+    </div>
+    <div id="capture-items"></div>
+    <h2>Imóveis processados</h2>
+    <div id="processed-actions">
+      <button id="processed-select-all" type="button">Selecionar todos</button>
+      <button id="processed-clear-selection" type="button">Desmarcar todos</button>
+      <button id="processed-delete-selected" type="button" disabled>Excluir selecionados</button>
+    </div>
+    <div id="saved-items"></div>
+    <script type="module" src="./popup.ts"></script>
+  </body>
+</html>

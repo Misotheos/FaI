@@ -1,0 +1,1 @@
+{"version":3,"file":"background.js","names":[],"sources":["../src/background.ts"],"sourcesContent":["chrome.runtime.onInstalled.addListener(() => {\r\n  console.info('Background service worker initialized');\r\n});\r\n"],"mappings":"AAAA,OAAO,QAAQ,YAAY,gBAAkB,CAC3C,QAAQ,KAAK,uCAAuC,CACtD,CAAC"}

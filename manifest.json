@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Assistente de Captação Fátima",
+  "version": "0.1.0",
+  "description": "Assistente independente para captar, organizar e revisar imóveis.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Assistente de Captação Fátima",
+    "default_popup": "popup.html"
+  }
+}
